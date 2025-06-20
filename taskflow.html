@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tasks"></i>
+                    <h1>TaskFlow</h1>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalTasks">0</span>
+                        <span class="stat-label">Total</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="completedTasks">0</span>
+                        <span class="stat-label">Concluídas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="pendingTasks">0</span>
+                        <span class="stat-label">Pendentes</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="add-task-section">
+                <div class="add-task-form">
+                    <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa..." maxlength="100">
+                    <select id="prioritySelect">
+                        <option value="baixa">Baixa</option>
+                        <option value="media" selected>Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                    <button id="addTaskBtn" class="add-btn">
+                        <i class="fas fa-plus"></i>
+                        Adicionar
+                    </button>
+                </div>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="todas">Todas</button>
+                <button class="filter-btn" data-filter="pendentes">Pendentes</button>
+                <button class="filter-btn" data-filter="concluidas">Concluídas</button>
+                <button class="filter-btn" data-filter="alta">Alta Prioridade</button>
+            </div>
+
+            <div class="tasks-section">
+                <div class="tasks-header">
+                    <h2>Suas Tarefas</h2>
+                    <button id="clearCompletedBtn" class="clear-btn">
+                        <i class="fas fa-trash"></i>
+                        Limpar Concluídas
+                    </button>
+                </div>
+                
+                <div class="tasks-container" id="tasksContainer">
+                    <div class="empty-state" id="emptyState">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h3>Nenhuma tarefa encontrada</h3>
+                        <p>Adicione sua primeira tarefa para começar a organizar seu dia!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="toast" id="toast">
+            <i class="fas fa-check-circle"></i>
+            <span id="toastMessage">Tarefa adicionada com sucesso!</span>
+        </div>
+    </div>
+
+    <!-- Modal de Edição -->
+    <div class="modal-overlay" id="editModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Editar Tarefa</h3>
+                <button class="close-btn" id="closeModalBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="editTaskInput" placeholder="Editar tarefa..." maxlength="100">
+                <select id="editPrioritySelect">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button class="cancel-btn" id="cancelEditBtn">Cancelar</button>
+                <button class="save-btn" id="saveEditBtn">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
