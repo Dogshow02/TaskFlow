@@ -1,255 +1,140 @@
-README - Projeto Integrador TaskFlow
+ README - Projeto Integrador TaskFlow
 
-Sobre o Projeto
+ Sobre o projeto
 
-O TaskFlow é uma aplicação web desenvolvida como projeto integrador para a disciplina de Programação Web. Trata-se de um gerenciador de tarefas moderno e intuitivo que permite aos usuários organizar suas atividades diárias de forma eficiente.
+O TaskFlow é uma aplicação web desenvolvida para o Projeto Integrador da disciplina de Programação Web. A ideia é oferecer um gerenciador de tarefas simples, moderno e intuitivo, que ajude o usuário a organizar suas atividades do dia a dia com mais eficiência.
 
-Funcionalidades
+---
 
-•
-Adicionar Tarefas: Criação rápida de novas tarefas com diferentes níveis de prioridade
+ Funcionalidades
 
-•
-Editar Tarefas: Modificação do texto e prioridade de tarefas existentes
+- Adicionar Tarefas: Criação rápida de novas tarefas com prioridade (Baixa, Média ou Alta)
+- Editar Tarefas: Altere o texto ou a prioridade de tarefas já criadas
+- Excluir Tarefas: Remova tarefas com confirmação para evitar erros
+- Marcar como concluída: Use o checkbox para acompanhar o progresso
+- Sistema de Prioridade: Indicação visual do nível de prioridade
+- Filtros: Visualize por status (Todas, Pendentes ou Concluídas) e prioridade
+- Estatísticas: Contadores em tempo real (total, concluídas e pendentes)
+- Persistência local: Os dados são salvos automaticamente no navegador
+- Design Responsivo: Interface que se adapta a desktop, tablet e celular
+- Interface Moderna: Visual clean, com animações suaves e feedbacks claros
 
-•
-Excluir Tarefas: Remoção de tarefas com confirmação de segurança
+---
 
-•
-Marcar como Concluída: Sistema de checkbox para controle de progresso
+Tecnologias utilizadas
 
-•
-Sistema de Prioridades: Três níveis (Baixa, Média, Alta) com indicadores visuais
+- HTML5: Estrutura semântica e acessível
+- CSS3: Estilo moderno com Flexbox e design responsivo
+- JavaScript (ES6+): Lógica com classes, arrow functions e APIs nativas
+- Local Storage: Armazenamento dos dados no navegador
+- Font Awesome: Ícones vetoriais
+- Google Fonts (Inter): Tipografia para melhor leitura
 
-•
-Filtros: Visualização por status (Todas, Pendentes, Concluídas) e prioridade
+---
 
-•
-Estatísticas: Contadores em tempo real de tarefas totais, concluídas e pendentes
+ Estrutura do projeto
 
-•
-Persistência Local: Dados salvos automaticamente no navegador
-
-•
-Design Responsivo: Interface adaptável para desktop, tablet e mobile
-
-•
-Interface Moderna: Design clean com animações suaves e feedback visual
-
-Tecnologias Utilizadas
-
-•
-HTML5: Estruturação semântica e acessível
-
-•
-CSS3: Estilização moderna com Flexbox, animações e design responsivo
-
-•
-JavaScript ES6+: Lógica de funcionamento com classes, arrow functions e APIs nativas
-
-•
-Local Storage: Persistência de dados no navegador
-
-•
-Font Awesome: Ícones vetoriais
-
-•
-Google Fonts: Tipografia (Inter)
-
-Estrutura do Projeto
-
-Plain Text
-
-
+```
 projeto_integrador_todo/
-├── index.html                           # Página principal da aplicação
-├── styles.css                           # Estilos e design responsivo
-├── script.js                            # Lógica JavaScript da aplicação
-├── documentacao_projeto_integrador.md   # Documentação completa (Markdown)
-├── documentacao_projeto_integrador.pdf  # Documentação completa (PDF)
-└── README.md                            # Este arquivo
+├── index.html                # Página principal
+├── styles.css                 # Estilos e responsividade
+├── script.js                  # Código JavaScript
+├── documentacao_projeto_integrador.md
+├── documentacao_projeto_integrador.pdf
+└── README.md
+```
 
+---
 
-Como Executar
+Como executar
 
-1.
-Clone ou baixe o projeto
+1. Baixe ou clone o projeto
+2. Abra o arquivo index.html em qualquer navegador moderno
+3. Pronto! Não é necessário instalar nada
 
-2.
-Abra o arquivo index.html em qualquer navegador moderno
+---
 
-3.
-Comece a usar! Não há necessidade de instalação ou configuração adicional
+Como usar
 
-Como Usar
+- Adicionar tarefas: Digite o texto, selecione a prioridade e clique em Adicionar ou pressione Enter
+- Gerenciar: Marque como concluída (círculo à esquerda), edite (ícone de lápis) ou exclua (ícone de lixeira)
+- Organizar: Use os filtros e acompanhe o progresso pelas estatísticas. Limpe tarefas concluídas com o botão correspondente.
 
-Adicionando Tarefas
+---
 
-1.
-Digite o texto da tarefa no campo de entrada
+Objetivos acadêmicos alcançados
 
-2.
-Selecione a prioridade desejada (Baixa, Média, Alta)
+- Aplicação prática de desenvolvimento web moderno
+- Criação de interface responsiva
+- Foco em experiência do usuário
+- Código em programação orientada a objetos
+- Uso de persistência local
+- Produção de documentação técnica completa
 
-3.
-Clique em "Adicionar" ou pressione Enter
+---
 
-Gerenciando Tarefas
+## Documentação completa
 
-•
-Marcar como concluída: Clique no círculo à esquerda da tarefa
+Disponível em:
 
-•
-Editar: Clique no ícone de lápis azul
+- `documentacao_projeto_integrador.md`
+- `documentacao_projeto_integrador.pdf`
 
-•
-Excluir: Clique no ícone de lixeira vermelho
+Conteúdo:
 
-Organizando
+- Fundamentação teórica
+- Metodologia
+- Detalhes da implementação
+- Resultados e discussões
+- Conclusões e sugestões futuras
+- Referências
 
-•
-Use os filtros para visualizar tarefas específicas
+---
 
-•
-Acompanhe seu progresso através das estatísticas no topo
+ Requisitos técnicos
 
-•
-Limpe tarefas concluídas com o botão "Limpar Concluídas"
+- Navegador: Chrome, Firefox, Edge, Safari (qualquer moderno)
+- JavaScript: Ativo
+- Resolução: Otimizado para 320px a 1920px+
+- Conexão: Não precisa de internet depois de carregado
 
-Objetivos Acadêmicos Alcançados
+---
 
-Este projeto demonstra a aplicação prática de:
+ Características do design
 
-•
-Desenvolvimento Web Moderno: Uso de tecnologias atuais e boas práticas
+- Cores: Gradiente roxo/azul com detalhes coloridos
+- Tipografia: Inter (Google Fonts)
+- Animações: Transições suaves e microinterações
+- Acessibilidade: Contraste adequado e elementos semânticos
+- Mobile-first: Interface desenhada para funcionar bem em dispositivos móveis
 
-•
-Design Responsivo: Interface que funciona em todos os dispositivos
+---
 
-•
-Experiência do Usuário: Interface intuitiva e feedback visual adequado
+ Métricas de performance
 
-•
-Programação Orientada a Objetos: Estruturação do código JavaScript em classes
+- Carregamento: < 500ms em conexões padrão
+- Tempo de resposta: < 50ms nas interações
+- Compatibilidade: 95%+ dos navegadores modernos
+- Tamanho total: < 100KB (HTML + CSS + JS)
 
-•
-Persistência de Dados: Implementação de armazenamento local
+---
 
-•
-Documentação Técnica: Registro completo do processo de desenvolvimento
+ Melhorias futuras
 
-Documentação Completa
+- Sincronização em nuvem
+- Notificações e lembretes
+- Categorias personalizadas
+- Colaboração entre usuários
+- Exportação de dados
+- Temas personalizáveis
+- Integração com calendários
 
-A documentação acadêmica completa do projeto está disponível em:
+---
 
-•
-Formato Markdown: documentacao_projeto_integrador.md
+Autor
 
-•
-Formato PDF: documentacao_projeto_integrador.pdf
+Douglas Teixeira de Freitas 
+Projeto Integrador — Programação Web  
+Orientação: Professora Ingrid Batista
 
-A documentação inclui:
-
-•
-Fundamentação teórica
-
-•
-Metodologia de desenvolvimento
-
-•
-Análise detalhada da implementação
-
-•
-Resultados e discussões
-
-•
-Conclusões e trabalhos futuros
-
-•
-Referências bibliográficas
-
-Requisitos Técnicos
-
-•
-Navegador: Qualquer navegador moderno (Chrome, Firefox, Safari, Edge)
-
-•
-JavaScript: Habilitado (necessário para funcionalidade)
-
-•
-Resolução: Otimizado para resoluções de 320px a 1920px+
-
-•
-Conexão: Não requer internet após carregamento inicial
-
-Características de Design
-
-•
-Paleta de Cores: Gradiente roxo/azul com acentos coloridos
-
-•
-Tipografia: Inter (Google Fonts) para legibilidade otimizada
-
-•
-Animações: Transições suaves e micro-interações
-
-•
-Acessibilidade: Contraste adequado e elementos semânticos
-
-•
-Responsividade: Mobile-first design
-
-Métricas de Performance
-
-•
-Carregamento: < 500ms em conexões padrão
-
-•
-Responsividade: < 50ms para operações de interface
-
-•
-Compatibilidade: 95%+ dos navegadores modernos
-
-•
-Tamanho: < 100KB total (HTML + CSS + JS)
-
-Possíveis Melhorias Futuras
-
-•
-Sincronização em nuvem
-
-•
-Notificações e lembretes
-
-•
-Categorias personalizadas
-
-•
-Colaboração entre usuários
-
-•
-Exportação de dados
-
-•
-Temas personalizáveis
-
-•
-Integração com calendários
-
-Autor:
-
-Douglas Teixeira de freitas
-
-Projeto Integrador - Programação Web 
-
- Professora Ingrid Batista
-
-
-
-
-
-Este projeto foi desenvolvido com foco na aplicação prática de conceitos de desenvolvimento web moderno, demonstrando a integração entre teoria e prática no contexto acadêmico.
-
-
-
-
+> Este projeto foi criado com foco na aplicação prática dos conceitos estudados em desenvolvimento web, integrando teoria e prática em um trabalho acadêmico.
